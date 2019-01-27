@@ -10,13 +10,16 @@ def main():
         singele_game()
         game=str(input("Do you want a new game?(Y/N)"))
         if game=="N":
+
             break
 
 
 def singele_game():
+    print("#######################")
     print('Game has started.')
     string=get_random_string()
     print("The word has {} letters".format(len(string)))
+    print(string)
     chance = 5
     rest=0
     l=[]
@@ -39,13 +42,13 @@ def singele_game():
                 print(l[i],end="")
 
             print("")
-            print("////////////////////////////")
+            print("************************")
 
         else:
             chance=chance-1
             print("Nanana")
             print("You have {} chance(s)".format(chance))
-            print("////////////////////////////")
+            print("*************************")
         if chance<1:
             print("You loss")
             break
