@@ -10,8 +10,10 @@ def main():
         singele_game()
         game=str(input("Do you want a new game?(Y/N)"))
         if game=="N":
+            print("Thanks for playing Hangman")
 
             break
+    return None
 
 
 def singele_game():
