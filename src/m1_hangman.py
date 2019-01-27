@@ -19,7 +19,7 @@ def singele_game():
     print('Game has started.')
     string=get_random_string()
     print("The word has {} letters".format(len(string)))
-    print(string)
+
     chance = 5
     rest=0
     l=[]
@@ -50,7 +50,8 @@ def singele_game():
             print("You have {} chance(s)".format(chance))
             print("*************************")
         if chance<1:
-            print("You loss")
+            print("You lose")
+            print("The word is ' {} '".format(string))
             break
         for i in range (len(l)):
             if l[k]=="_ ":
