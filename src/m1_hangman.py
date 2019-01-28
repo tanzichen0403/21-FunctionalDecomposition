@@ -21,7 +21,7 @@ def singele_game():
     print('Game has started.')
     string=get_random_string()
     print("The word has {} letters".format(len(string)))
-    print(string)
+    
     chance = 5
     rest=0
     l=[]
